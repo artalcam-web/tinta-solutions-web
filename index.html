@@ -72,12 +72,28 @@
 </script>
 </head>
 <body>
+<svg style="display:none" aria-hidden="true">
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3.4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8Z"/></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-8.4 8.4c-1.3 0-2.6-.3-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8A8.4 8.4 0 0 1 12.5 3a8.5 8.5 0 0 1 8.5 8.5Z"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.3 7-11.5A7 7 0 0 0 5 9.5C5 14.7 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.3"/></symbol>
+<symbol id="i-printer" viewBox="0 0 24 24"><path d="M6 9V3h12v6"/><rect x="4" y="9" width="16" height="8" rx="1.5"/><path d="M6 17v4h12v-4"/><circle cx="17" cy="12.5" r="0.6" fill="currentColor" stroke="none"/></symbol>
+<symbol id="i-laptop" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="9" rx="1"/><path d="M2.5 19h19l-1.5-3H4l-1.5 3Z"/></symbol>
+<symbol id="i-drone" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.3"/><path d="M12 9.7 6 5M12 9.7l6-4.7M12 14.3 6 19M12 14.3l6 4.7"/><circle cx="5" cy="4.3" r="1.6"/><circle cx="19" cy="4.3" r="1.6"/><circle cx="5" cy="19.7" r="1.6"/><circle cx="19" cy="19.7" r="1.6"/></symbol>
+<symbol id="i-droplet" viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 10.5A6 6 0 0 1 6 13.5C6 9.5 12 3 12 3Z"/></symbol>
+<symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 3 4 14h6l-1 7 9-11h-6l1-7Z"/></symbol>
+<symbol id="i-tag" viewBox="0 0 24 24"><path d="M12.6 3H5a2 2 0 0 0-2 2v7.6c0 .5.2 1 .6 1.4l9 9a2 2 0 0 0 2.8 0l6.6-6.6a2 2 0 0 0 0-2.8l-9-9c-.4-.4-.9-.6-1.4-.6Z"/><circle cx="8.5" cy="8.5" r="1.3" fill="currentColor" stroke="none"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="m4 12 5.5 5.5L20 7"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+<symbol id="i-facebook" viewBox="0 0 24 24"><path d="M15 4h-2.3C10.5 4 9 5.6 9 8v2.5H7V14h2v7h3.4v-7h2.6l.5-3.5h-3.1V8.3c0-.9.5-1.3 1.4-1.3H15V4Z"/></symbol>
+</svg>
+
 <a class="skip-link" href="#main">Saltar al contenido</a>
 
 <header class="site-header">
   <div class="container nav">
     <a class="brand" href="/#top">
-      <img src="/images/logo-icon.webp" alt="Logo Tinta Solutions" width="36" height="36">
+      <img src="/images/logo-icon.webp" alt="Logo Tinta Solutions" width="32" height="32">
       <span class="brand-name">Tinta Solutions</span>
     </a>
     <nav aria-label="Navegación principal">
@@ -91,8 +107,8 @@
       </ul>
     </nav>
     <div class="nav-cta">
-      <a class="btn btn-outline on-light btn-sm" href="tel:+526612305857">📞 661 230 5857</a>
-      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">☰</button>
+      <a class="btn btn-outline btn-sm" href="tel:+526612305857"><svg class="icn"><use href="#i-phone"/></svg><span class="label">661 230 5857</span></a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links"><svg class="icn" style="width:24px;height:24px"><use href="#i-menu"/></svg></button>
     </div>
   </div>
 </header>
@@ -107,31 +123,31 @@
         <h1>Reparación de impresoras, computadoras y <span class="highlight">drones DJI</span> en Tijuana</h1>
         <p class="lead">Atendemos la colonia Francisco Villa y sus alrededores con servicio técnico profesional, rápido y con garantía en cada trabajo.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="https://wa.me/526612305857?text=Hola%2C%20quiero%20cotizar%20un%20servicio" target="_blank" rel="noopener">💬 Escríbenos por WhatsApp</a>
+          <a class="btn btn-whatsapp" href="https://wa.me/526612305857?text=Hola%2C%20quiero%20cotizar%20un%20servicio" target="_blank" rel="noopener"><svg class="icn"><use href="#i-chat"/></svg>Escríbenos por WhatsApp</a>
           <a class="btn btn-outline" href="#servicios">Ver servicios</a>
         </div>
-        <div class="hero-trust">
-          <span>🛡️ Garantía incluida</span>
-          <span>⚡ Atención rápida</span>
-          <span>📍 Francisco Villa y alrededores</span>
-        </div>
+        <ul class="hero-trust">
+          <li><span><svg class="icn"><use href="#i-shield"/></svg>Garantía incluida</span></li>
+          <li><span><svg class="icn"><use href="#i-bolt"/></svg>Atención rápida</span></li>
+          <li><span><svg class="icn"><use href="#i-pin"/></svg>Francisco Villa y alrededores</span></li>
+        </ul>
       </div>
       <div class="hero-media">
         <div class="frame r-16-9">
           <img src="/images/hero-devices.webp" alt="Impresora, laptop y tinta de colores — servicio técnico Tinta Solutions en Tijuana" width="1600" height="900" loading="eager">
         </div>
-        <div class="hero-badge"><span class="dot"></span> Disponibles ahora · Coordinamos horario contigo</div>
+        <div class="hero-badge"><span class="dot"></span><span class="txt">Disponibles ahora · coordinamos horario contigo</span></div>
       </div>
     </div>
   </section>
 
   <div class="trustbar">
     <div class="container">
-      <span>🖨️ Impresoras</span>
-      <span>💻 Computadoras</span>
-      <span>🚁 Drones DJI</span>
-      <span>🎨 Recarga de tinta</span>
-      <span>🛡️ Garantía en cada trabajo</span>
+      <span><svg class="icn"><use href="#i-printer"/></svg>Impresoras</span>
+      <span><svg class="icn"><use href="#i-laptop"/></svg>Computadoras</span>
+      <span><svg class="icn"><use href="#i-drone"/></svg>Drones DJI</span>
+      <span><svg class="icn"><use href="#i-droplet"/></svg>Recarga de tinta</span>
+      <span><svg class="icn"><use href="#i-shield"/></svg>Garantía en cada trabajo</span>
     </div>
   </div>
 
@@ -146,9 +162,9 @@
         <h2>Un negocio local que conoce tu colonia</h2>
         <p class="muted">Tinta Solutions (Tintas Solutions) son soluciones tecnológicas en Tijuana, con base en la colonia Francisco Villa. Nos especializamos en la reparación, mantenimiento y optimización de equipos de impresión, cómputo y drones DJI, ofreciendo un servicio profesional, rápido y confiable para hogares, oficinas y negocios.</p>
         <ul class="about-points">
-          <li><span class="chip">✓</span> Trato directo y honesto, sin letras chiquitas</li>
-          <li><span class="chip">✓</span> Diagnóstico claro antes de cualquier cargo</li>
-          <li><span class="chip">✓</span> Servicio en la colonia Francisco Villa y sus alrededores</li>
+          <li><span class="chip"><svg class="icn"><use href="#i-check"/></svg></span> Trato directo y honesto, sin letras chiquitas</li>
+          <li><span class="chip"><svg class="icn"><use href="#i-check"/></svg></span> Diagnóstico claro antes de cualquier cargo</li>
+          <li><span class="chip"><svg class="icn"><use href="#i-check"/></svg></span> Servicio en la colonia Francisco Villa y sus alrededores</li>
         </ul>
       </div>
     </div>
@@ -166,7 +182,7 @@
         <div class="service-card">
           <div class="frame r-4-3"><img src="/images/service-printer2.webp" alt="Impresora y botellas de tinta de colores en servicio técnico Tijuana" width="900" height="675" loading="lazy"></div>
           <div class="service-card-body">
-            <h3><span class="ico">🖨️</span> Impresoras</h3>
+            <h3><span class="ico"><svg class="icn"><use href="#i-printer"/></svg></span> Impresoras</h3>
             <ul class="service-list">
               <li>Reparación de impresoras de tinta y láser</li>
               <li>Mantenimiento preventivo y correctivo</li>
@@ -181,7 +197,7 @@
         <div class="service-card">
           <div class="frame r-4-3"><img src="/images/service-computer2.webp" alt="Laptop y PC de escritorio en servicio técnico Tijuana" width="900" height="675" loading="lazy"></div>
           <div class="service-card-body">
-            <h3><span class="ico">💻</span> Computadoras</h3>
+            <h3><span class="ico"><svg class="icn"><use href="#i-laptop"/></svg></span> Computadoras</h3>
             <ul class="service-list">
               <li>Diagnóstico completo de hardware y software</li>
               <li>Formateo e instalación de Windows</li>
@@ -215,10 +231,10 @@
         <h2>Confianza local, resultados reales</h2>
       </div>
       <div class="why-grid">
-        <div class="why-card"><span class="icon">⚡</span><h3>Atención rápida</h3><p>Respondemos y coordinamos tu servicio el mismo día siempre que es posible.</p></div>
-        <div class="why-card"><span class="icon">💰</span><h3>Precios justos</h3><p>Cotización clara y transparente antes de iniciar cualquier trabajo.</p></div>
-        <div class="why-card"><span class="icon">🛡️</span><h3>Garantía</h3><p>Cada servicio que realizamos incluye garantía.</p></div>
-        <div class="why-card"><span class="icon">📍</span><h3>Atención local</h3><p>Conocemos la colonia Francisco Villa y sus alrededores; damos un trato cercano y de confianza.</p></div>
+        <div class="why-card"><span class="icon"><svg class="icn"><use href="#i-bolt"/></svg></span><h3>Atención rápida</h3><p>Respondemos y coordinamos tu servicio el mismo día siempre que es posible.</p></div>
+        <div class="why-card"><span class="icon"><svg class="icn"><use href="#i-tag"/></svg></span><h3>Precios justos</h3><p>Cotización clara y transparente antes de iniciar cualquier trabajo.</p></div>
+        <div class="why-card"><span class="icon"><svg class="icn"><use href="#i-shield"/></svg></span><h3>Garantía</h3><p>Cada servicio que realizamos incluye garantía.</p></div>
+        <div class="why-card"><span class="icon"><svg class="icn"><use href="#i-pin"/></svg></span><h3>Atención local</h3><p>Conocemos la colonia Francisco Villa y sus alrededores; damos un trato cercano y de confianza.</p></div>
       </div>
     </div>
   </section>
@@ -285,10 +301,10 @@
         <h2>Hablemos de tu equipo</h2>
         <p class="muted">Escríbenos por WhatsApp, llámanos o mándanos un mensaje con el formulario.</p>
         <ul class="contact-list">
-          <li><span class="chip">💬</span> <a href="https://wa.me/526612305857" target="_blank" rel="noopener">WhatsApp: 661 230 5857</a></li>
-          <li><span class="chip">📞</span> <a href="tel:+526612305857">Teléfono: 661 230 5857</a></li>
-          <li><span class="chip">📘</span> <a href="https://www.facebook.com/profile.php?id=61590290923533" target="_blank" rel="noopener">Síguenos en Facebook (Tintas Solutions)</a></li>
-          <li><span class="chip">📍</span> <span>Mexico 4051, Col. Francisco Villa, CP 22615, Tijuana, B.C.</span></li>
+          <li><span class="chip"><svg class="icn"><use href="#i-chat"/></svg></span> <a href="https://wa.me/526612305857" target="_blank" rel="noopener">WhatsApp: 661 230 5857</a></li>
+          <li><span class="chip"><svg class="icn"><use href="#i-phone"/></svg></span> <a href="tel:+526612305857">Teléfono: 661 230 5857</a></li>
+          <li><span class="chip"><svg class="icn"><use href="#i-facebook"/></svg></span> <a href="https://www.facebook.com/profile.php?id=61590290923533" target="_blank" rel="noopener">Síguenos en Facebook (Tintas Solutions)</a></li>
+          <li><span class="chip"><svg class="icn"><use href="#i-pin"/></svg></span> <span class="txt">Mexico 4051, Col. Francisco Villa, CP 22615, Tijuana, B.C.</span></li>
         </ul>
       </div>
       <div class="form-card">
@@ -320,7 +336,7 @@
     <div class="footer-grid">
       <div>
         <div class="footer-brand">
-          <img src="/images/logo-icon.webp" alt="Tinta Solutions" width="32" height="32">
+          <img src="/images/logo-icon.webp" alt="Tinta Solutions" width="28" height="28">
           <span>Tinta Solutions</span>
         </div>
         <p>Reparación y mantenimiento de impresoras, computadoras y drones DJI en Tijuana, colonia Francisco Villa y alrededores. Atención rápida, precios justos y garantía en cada servicio.</p>
@@ -351,7 +367,7 @@
   </div>
 </footer>
 
-<a class="whatsapp-float" href="https://wa.me/526612305857?text=Hola%2C%20quiero%20información%20sobre%20un%20servicio" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">💬</a>
+<a class="whatsapp-float" href="https://wa.me/526612305857?text=Hola%2C%20quiero%20información%20sobre%20un%20servicio" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp"><svg class="icn"><use href="#i-chat"/></svg></a>
 
 <script src="/js/main.js"></script>
 </body>

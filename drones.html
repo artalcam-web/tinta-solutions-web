@@ -51,12 +51,33 @@
 </script>
 </head>
 <body>
+<svg style="display:none" aria-hidden="true">
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3.4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8Z"/></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-8.4 8.4c-1.3 0-2.6-.3-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8A8.4 8.4 0 0 1 12.5 3a8.5 8.5 0 0 1 8.5 8.5Z"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.3 7-11.5A7 7 0 0 0 5 9.5C5 14.7 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.3"/></symbol>
+<symbol id="i-drone" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.3"/><path d="M12 9.7 6 5M12 9.7l6-4.7M12 14.3 6 19M12 14.3l6 4.7"/><circle cx="5" cy="4.3" r="1.6"/><circle cx="19" cy="4.3" r="1.6"/><circle cx="5" cy="19.7" r="1.6"/><circle cx="19" cy="19.7" r="1.6"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.3-4.3"/></symbol>
+<symbol id="i-fan" viewBox="0 0 24 24"><circle cx="12" cy="12" r="1.6"/><path d="M12 10.4c1.5-3 .5-6-1.5-7-1.5 2.5-.5 5.5 1.5 7ZM13.6 12c3 1.5 6 .5 7-1.5-2.5-1.5-5.5-.5-7 1.5ZM12 13.6c-1.5 3-.5 6 1.5 7 1.5-2.5.5-5.5-1.5-7ZM10.4 12c-3-1.5-6-.5-7 1.5 2.5 1.5 5.5.5 7-1.5Z"/></symbol>
+<symbol id="i-box" viewBox="0 0 24 24"><path d="M12 3 21 8v8l-9 5-9-5V8l9-5Z"/><path d="M3 8l9 5 9-5M12 13v8"/></symbol>
+<symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1Z"/><circle cx="12" cy="13" r="3.2"/></symbol>
+<symbol id="i-signal" viewBox="0 0 24 24"><path d="M12 20h.01"/><path d="M8.5 16.5a5 5 0 0 1 7 0"/><path d="M5.5 13.5a9.5 9.5 0 0 1 13 0"/><path d="M2.5 10.5a13.5 13.5 0 0 1 19 0"/></symbol>
+<symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m14.8 9.2-1.6 4.4-4.4 1.6 1.6-4.4 4.4-1.6Z"/></symbol>
+<symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 4.6L3 17.3l3.7 3.7 6.4-6.3a4 4 0 0 0 4.6-5.4l-2.8 2.8-2.6-.6-.6-2.6 2.8-2.8Z"/></symbol>
+<symbol id="i-cpu" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="1.5"/><rect x="9.5" y="9.5" width="5" height="5" rx="0.5"/><path d="M9 3v2M15 3v2M9 19v2M15 19v2M3 9h2M3 15h2M19 9h2M19 15h2"/></symbol>
+<symbol id="i-battery" viewBox="0 0 24 24"><rect x="2" y="8" width="17" height="8" rx="1.5"/><path d="M21 10.5v3"/><path d="M6 11v2M9 11v2"/></symbol>
+<symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3 22 20H2L12 3Z"/><path d="M12 10v4"/><path d="M12 17h.01"/></symbol>
+<symbol id="i-send" viewBox="0 0 24 24"><path d="m3 11 18-8-8 18-2.5-7.5L3 11Z"/></symbol>
+<symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.3-5.6"/><path d="M20 4v5h-5"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+</svg>
+
 <a class="skip-link" href="#main">Saltar al contenido</a>
 
 <header class="site-header">
   <div class="container nav">
     <a class="brand" href="/#top">
-      <img src="/images/logo-icon.webp" alt="Logo Tinta Solutions" width="36" height="36">
+      <img src="/images/logo-icon.webp" alt="Logo Tinta Solutions" width="32" height="32">
       <span class="brand-name">Tinta Solutions</span>
     </a>
     <nav aria-label="Navegación principal">
@@ -70,8 +91,8 @@
       </ul>
     </nav>
     <div class="nav-cta">
-      <a class="btn btn-outline on-light btn-sm" href="tel:+526612305857">📞 661 230 5857</a>
-      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">☰</button>
+      <a class="btn btn-outline btn-sm" href="tel:+526612305857"><svg class="icn"><use href="#i-phone"/></svg><span class="label">661 230 5857</span></a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links"><svg class="icn" style="width:24px;height:24px"><use href="#i-menu"/></svg></button>
     </div>
   </div>
 </header>
@@ -87,14 +108,14 @@
         <h1>Reparación de <span class="highlight">drones DJI</span> en Tijuana</h1>
         <p class="lead">Diagnóstico, calibración y reparación de drones DJI en Tijuana, colonia Francisco Villa y alrededores. Trabajamos principalmente con equipos DJI (Mavic, Mini, Air, Phantom, Avata y más).</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="https://wa.me/526612305857?text=Hola%2C%20tengo%20un%20drone%20DJI%20que%20necesita%20servicio" target="_blank" rel="noopener">💬 Cotizar reparación</a>
+          <a class="btn btn-whatsapp" href="https://wa.me/526612305857?text=Hola%2C%20tengo%20un%20drone%20DJI%20que%20necesita%20servicio" target="_blank" rel="noopener"><svg class="icn"><use href="#i-chat"/></svg>Cotizar reparación</a>
           <a class="btn btn-outline" href="#servicios-drones">Ver servicios</a>
         </div>
-        <div class="hero-trust">
-          <span>🛡️ Garantía incluida</span>
-          <span>🔍 Diagnóstico previo</span>
-          <span>📍 Francisco Villa y alrededores</span>
-        </div>
+        <ul class="hero-trust">
+          <li><span><svg class="icn"><use href="#i-shield"/></svg>Garantía incluida</span></li>
+          <li><span><svg class="icn"><use href="#i-search"/></svg>Diagnóstico previo</span></li>
+          <li><span><svg class="icn"><use href="#i-pin"/></svg>Francisco Villa y alrededores</span></li>
+        </ul>
       </div>
       <div class="hero-media">
         <div class="frame r-16-9"><img src="/images/drone-hero.webp" alt="Drone DJI en reparación en Tijuana" width="1600" height="900" loading="eager"></div>
@@ -111,22 +132,23 @@
         <p class="muted">Desde mantenimiento preventivo hasta reparación después de un accidente.</p>
       </div>
       <div class="drone-services-grid">
-        <div class="drone-service-card"><span class="icon">🔍</span><h3>Diagnóstico completo</h3><p>Evaluación de motores, hélices, batería, cámara, gimbal y electrónica de vuelo.</p></div>
-        <div class="drone-service-card"><span class="icon">🌀</span><h3>Hélices y motores</h3><p>Reemplazo de hélices dañadas y reparación o cambio de motores.</p></div>
-        <div class="drone-service-card"><span class="icon">🛬</span><h3>Tren de aterrizaje y carcasa</h3><p>Reparación de estructura, brazos y carcasa después de caídas o golpes.</p></div>
-        <div class="drone-service-card"><span class="icon">🎥</span><h3>Gimbal y cámara</h3><p>Calibración y reparación de gimbal, lentes y sensores de cámara.</p></div>
-        <div class="drone-service-card"><span class="icon">📡</span><h3>Transmisión de video y señal</h3><p>Solución de fallas de video en vivo, señal de control remoto y conectividad.</p></div>
-        <div class="drone-service-card"><span class="icon">🧭</span><h3>Calibración de sensores</h3><p>Calibración de IMU, compás y GPS para vuelos estables y precisos.</p></div>
-        <div class="drone-service-card"><span class="icon">🔧</span><h3>Actualización de firmware</h3><p>Actualización y reparación de firmware para corregir errores de sistema.</p></div>
-        <div class="drone-service-card"><span class="icon">🖥️</span><h3>Placas y controladores de vuelo</h3><p>Diagnóstico y reparación de placa controladora de vuelo (FC) y ESC.</p></div>
-        <div class="drone-service-card"><span class="icon">🔋</span><h3>Baterías y puertos de carga</h3><p>Diagnóstico de batería y reparación de puertos de carga dañados.</p></div>
-        <div class="drone-service-card"><span class="icon">🧹</span><h3>Mantenimiento preventivo</h3><p>Limpieza profunda, revisión de conexiones y chequeo general periódico.</p></div>
-        <div class="drone-service-card"><span class="icon">💥</span><h3>Reparación post-accidente</h3><p>Diagnóstico y reparación de daños tras una caída o choque.</p></div>
-        <div class="drone-service-card"><span class="icon">✈️</span><h3>Pruebas de vuelo</h3><p>Verificamos el funcionamiento con pruebas de vuelo antes de la entrega.</p></div>
+        <div class="drone-service-card"><span class="icon"><svg class="icn"><use href="#i-search"/></svg></span><h3>Diagnóstico completo</h3><p>Evaluación de motores, hélices, batería, cámara, gimbal y electrónica de vuelo.</p></div>
+        <div class="drone-service-card"><span class="icon"><svg class="icn"><use href="#i-fan"/></svg></span><h3>Hélices y motores</h3><p>Reemplazo de hélices dañadas y reparación o cambio de motores.</p></div>
+        <div class="drone-service-card"><span class="icon"><svg class="icn"><use href="#i-box"/></svg></span><h3>Tren de aterrizaje y carcasa</h3><p>Reparación de estructura, brazos y carcasa después de caídas o golpes.</p></div>
+        <div class="drone-service-card"><span class="icon"><svg class="icn"><use href="#i-camera"/></svg></span><h3>Gimbal y cámara</h3><p>Calibración y reparación de gimbal, lentes y sensores de cámara.</p></div>
+        <div class="drone-service-card"><span class="icon"><svg class="icn"><use href="#i-signal"/></svg></span><h3>Transmisión de video y señal</h3><p>Solución de fallas de video en vivo, señal de control remoto y conectividad.</p></div>
+        <div class="drone-service-card"><span class="icon"><svg class="icn"><use href="#i-compass"/></svg></span><h3>Calibración de sensores</h3><p>Calibración de IMU, compás y GPS para vuelos estables y precisos.</p></div>
+        <div class="drone-service-card"><span class="icon"><svg class="icn"><use href="#i-wrench"/></svg></span><h3>Actualización de firmware</h3><p>Actualización y reparación de firmware para corregir errores de sistema.</p></div>
+        <div class="drone-service-card"><span class="icon"><svg class="icn"><use href="#i-cpu"/></svg></span><h3>Placas y controladores de vuelo</h3><p>Diagnóstico y reparación de placa controladora de vuelo (FC) y ESC.</p></div>
+        <div class="drone-service-card"><span class="icon"><svg class="icn"><use href="#i-battery"/></svg></span><h3>Baterías y puertos de carga</h3><p>Diagnóstico de batería y reparación de puertos de carga dañados.</p></div>
+        <div class="drone-service-card"><span class="icon"><svg class="icn"><use href="#i-refresh"/></svg></span><h3>Mantenimiento preventivo</h3><p>Limpieza profunda, revisión de conexiones y chequeo general periódico.</p></div>
+        <div class="drone-service-card"><span class="icon"><svg class="icn"><use href="#i-alert"/></svg></span><h3>Reparación post-accidente</h3><p>Diagnóstico y reparación de daños tras una caída o choque.</p></div>
+        <div class="drone-service-card"><span class="icon"><svg class="icn"><use href="#i-send"/></svg></span><h3>Pruebas de vuelo</h3><p>Verificamos el funcionamiento con pruebas de vuelo antes de la entrega.</p></div>
       </div>
 
       <div class="brand-note">
-        🚁 <span>Nos enfocamos principalmente en equipos <strong>DJI</strong> (Mavic, Mini, Air, Phantom, Avata y más). Si tu modelo es de otra marca, escríbenos y con gusto lo revisamos.</span>
+        <svg class="icn"><use href="#i-drone"/></svg>
+        <span>Nos enfocamos principalmente en equipos <strong>DJI</strong> (Mavic, Mini, Air, Phantom, Avata y más). Si tu modelo es de otra marca, escríbenos y con gusto lo revisamos.</span>
       </div>
     </div>
   </section>
@@ -153,7 +175,7 @@
       <span class="eyebrow">Contacto</span>
       <h2>¿Tu drone DJI necesita servicio?</h2>
       <p class="muted" style="max-width:520px;margin:0 auto 28px">Escríbenos por WhatsApp y cuéntanos qué le pasa a tu drone; te ayudamos a diagnosticarlo.</p>
-      <a class="btn btn-primary" href="https://wa.me/526612305857?text=Hola%2C%20tengo%20un%20drone%20DJI%20que%20necesita%20servicio" target="_blank" rel="noopener">💬 Escríbenos por WhatsApp</a>
+      <a class="btn btn-whatsapp" href="https://wa.me/526612305857?text=Hola%2C%20tengo%20un%20drone%20DJI%20que%20necesita%20servicio" target="_blank" rel="noopener"><svg class="icn"><use href="#i-chat"/></svg>Escríbenos por WhatsApp</a>
     </div>
   </section>
 
@@ -164,7 +186,7 @@
     <div class="footer-grid">
       <div>
         <div class="footer-brand">
-          <img src="/images/logo-icon.webp" alt="Tinta Solutions" width="32" height="32">
+          <img src="/images/logo-icon.webp" alt="Tinta Solutions" width="28" height="28">
           <span>Tinta Solutions</span>
         </div>
         <p>Reparación y mantenimiento de impresoras, computadoras y drones DJI en Tijuana, colonia Francisco Villa y alrededores.</p>
@@ -194,7 +216,7 @@
   </div>
 </footer>
 
-<a class="whatsapp-float" href="https://wa.me/526612305857?text=Hola%2C%20tengo%20un%20drone%20DJI%20que%20necesita%20servicio" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">💬</a>
+<a class="whatsapp-float" href="https://wa.me/526612305857?text=Hola%2C%20tengo%20un%20drone%20DJI%20que%20necesita%20servicio" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp"><svg class="icn"><use href="#i-chat"/></svg></a>
 
 <script src="/js/main.js"></script>
 </body>
