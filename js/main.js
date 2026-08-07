@@ -6,11 +6,17 @@ document.addEventListener('DOMContentLoaded', function () {
   if (toggle && links) {
     toggle.addEventListener('click', function () {
       links.classList.toggle('open');
+      toggle.classList.toggle('open');
+      document.body.classList.toggle('menu-open');
       var expanded = links.classList.contains('open');
       toggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
     });
     links.querySelectorAll('a').forEach(function (a) {
-      a.addEventListener('click', function () { links.classList.remove('open'); });
+      a.addEventListener('click', function () {
+        links.classList.remove('open');
+        toggle.classList.remove('open');
+        document.body.classList.remove('menu-open');
+      });
     });
   }
 
