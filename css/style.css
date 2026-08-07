@@ -59,6 +59,7 @@ section{padding:52px 0}
 .frame img{width:100%;height:100%;object-fit:cover;object-position:center}
 .frame.r-16-9{aspect-ratio:16/9}
 .frame.r-4-3{aspect-ratio:4/3}
+.frame.r-1-1{aspect-ratio:1/1}
 .frame.glow{box-shadow:0 0 0 1px var(--line-dark), 0 30px 70px -20px var(--blue-glow), var(--shadow-strong)}
 
 h1,h2,h3{line-height:1.14;margin:0 0 14px;font-weight:800;letter-spacing:-.02em}
@@ -158,8 +159,12 @@ p{margin:0 0 14px}
 .hero{padding:44px 0 46px}
 @media (min-width:640px){.hero{padding:64px 0 64px}}
 @media (min-width:960px){.hero{padding:88px 0 84px}}
-.hero-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:34px;align-items:center}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:26px;align-items:center}
 @media (min-width:960px){.hero-grid{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:50px}}
+/* En celular la imagen es lo primero que se ve, antes del texto */
+@media (max-width:959px){.hero-media{order:-1}}
+.hero-media .frame.r-1-1{max-width:480px;margin:0 auto}
+@media (min-width:960px){.hero-media .frame.r-1-1{max-width:100%;margin:0}}
 .hero-copy{min-width:0}
 .hero h1{font-size:clamp(1.8rem,6vw,3.1rem);margin-bottom:16px;color:#fff;word-break:break-word}
 .hero .highlight{color:#7FA3FF}
@@ -270,6 +275,19 @@ p{margin:0 0 14px}
 .stars{color:var(--yellow);background:var(--ink);display:inline-block;padding:3px 9px;border-radius:6px;font-size:.78rem;margin-bottom:12px}
 .testimonial-card p{color:var(--text-2);font-style:italic;font-size:.9rem}
 .testimonial-name{font-weight:800;margin-top:10px;font-size:.88rem}
+
+/* Preguntas frecuentes */
+.faq-list{display:grid;gap:12px;max-width:760px;margin:0 auto}
+.faq-item{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-md);padding:4px 20px;box-shadow:var(--shadow-soft)}
+.faq-item summary{
+  cursor:pointer;list-style:none;padding:16px 26px 16px 0;font-weight:800;font-size:.98rem;position:relative;
+}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{
+  content:"+";position:absolute;right:0;top:14px;font-size:1.3rem;font-weight:400;color:var(--blue-2);
+}
+.faq-item[open] summary::after{content:"–"}
+.faq-item p{color:var(--text-2);font-size:.92rem;margin:0 0 16px;padding-right:26px}
 
 /* CTA final / contacto — oscuro, bookend con el hero */
 .contact-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:32px}

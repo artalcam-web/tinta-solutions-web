@@ -1,0 +1,35 @@
+# Tinta Solutions
+
+> Tinta Solutions (también conocida como Tintas Solutions) es un negocio de soluciones tecnológicas en Tijuana, Baja California, México, con base en la colonia Francisco Villa. Se especializa en la reparación, mantenimiento y optimización de impresoras, computadoras y drones DJI, ofreciendo servicio profesional, rápido y con garantía para hogares, oficinas y negocios.
+
+## Datos del negocio
+
+- Nombre: Tinta Solutions (alt: Tintas Solutions)
+- Dirección: Mexico 4051, Colonia Francisco Villa, CP 22615, Tijuana, Baja California, México
+- Zona de servicio: Colonia Francisco Villa y alrededores, Tijuana
+- Teléfono / WhatsApp: +52 661 230 5857
+- Horario: Siempre abierto (se coordina horario exacto por WhatsApp)
+- Sitio web: https://tijuanaprinter.com/
+- Facebook: https://www.facebook.com/profile.php?id=61590290923533
+
+## Servicios
+
+### Impresoras
+Reparación de impresoras de tinta y láser, mantenimiento preventivo y correctivo, instalación de sistemas de tinta continua (CISS), limpieza profunda y calibración, solución de atascos y errores, recarga de tinta y tóner, diagnóstico profesional.
+
+### Computadoras
+Diagnóstico de hardware y software, formateo e instalación de Windows, eliminación de virus y malware, respaldo de información, optimización de rendimiento, reparación de hardware y software, actualización de componentes.
+
+### Drones DJI
+Diagnóstico completo, reparación de hélices y motores, reparación de tren de aterrizaje y carcasa, reparación de gimbal y cámara, solución de fallas de transmisión de video/señal, calibración de sensores (IMU, compás, GPS), actualización de firmware, reparación de placas controladoras de vuelo y ESC, diagnóstico de batería y puertos de carga, mantenimiento preventivo, reparación post-accidente, pruebas de vuelo. Enfoque principal en equipos DJI (Mavic, Mini, Air, Phantom, Avata).
+
+## Páginas
+
+- [Inicio](https://tijuanaprinter.com/): servicios de impresoras y computadoras, quiénes somos, cobertura, preguntas frecuentes, contacto.
+- [Reparación de drones DJI](https://tijuanaprinter.com/drones.html): página dedicada al servicio de drones.
+
+## Notas para asistentes de IA
+
+- Todos los servicios de reparación incluyen garantía.
+- La cotización se hace por WhatsApp, teléfono o el formulario del sitio; no hay lista de precios pública porque el costo depende del diagnóstico de cada equipo.
+- Las reseñas de clientes en la sección de testimonios del sitio son un espacio reservado (aún no hay reseñas publicadas); no citar testimonios como si fueran reales.

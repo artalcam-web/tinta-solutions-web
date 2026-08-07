@@ -2,3 +2,7 @@ User-agent: *
 Allow: /
 
 Sitemap: https://tijuanaprinter.com/sitemap.xml
+
+# Contexto legible para asistentes de IA / LLMs
+# https://llmstxt.org/
+
