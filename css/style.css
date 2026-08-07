@@ -136,8 +136,8 @@ p{margin:0 0 14px}
   .nav-links.open{transform:translateX(0)}
   .nav-links a{padding:16px 18px;font-size:1.1rem;border-radius:var(--radius-sm)}
   .nav-toggle{display:flex}
-  .nav-cta .btn-outline span.label{display:none}
-  .nav-cta .btn-outline{padding:10px}
+  .nav-cta .btn span.label{display:none}
+  .nav-cta .btn{padding:10px}
   .brand-name{display:none}
   body.menu-open{overflow:hidden}
 }
@@ -327,13 +327,13 @@ p{margin:0 0 14px}
 .mobile-cta-bar{display:none}
 @media (max-width:640px){
   .mobile-cta-bar{
-    display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px;
+    display:flex;flex-direction:row;gap:10px;
     position:fixed;left:0;right:0;bottom:0;z-index:70;padding:10px 12px calc(10px + env(safe-area-inset-bottom));
     background:rgba(11,13,20,.95);backdrop-filter:blur(10px);border-top:1px solid var(--line-dark);
   }
-  .mobile-cta-bar .btn{width:100%;padding:12px 10px;font-size:.86rem}
+  .mobile-cta-bar .btn{flex:1 1 0;min-width:0;padding:12px 8px;font-size:.84rem}
   .whatsapp-float{display:none}
-  body{padding-bottom:64px}
+  body{padding-bottom:66px}
 }
 
 .skip-link{position:absolute;left:-999px;top:auto;background:var(--ink);color:#fff;padding:10px 16px;border-radius:8px;z-index:100}
